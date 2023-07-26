@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+### My interview task details:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### All the technologies are being used only to develop the backend.
 
-## Available Scripts
+1. Typescript
+2. Express.js
+3. MongooseODM
+4. Password hashing and encryption (bcrypt)
+5. JWT and token based authentication
+6. zod validation
+7. Global error handling
+8. Modular pattern
+9. Eslint and prettier setup
 
-In the project directory, you can run:
+   - Clean code and follow good coding practices.
+   - Deploy the backend project in the vercel.
+   - Use yarn package manager
 
-### `npm start`
+#### Backend deploy link:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Vercel deploy link: [Backend project link](https://itb-nine.vercel.app/)
+Github repo link: [Source code](https://github.com/dev-rakibul1/ITB_2)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API
 
-### `npm test`
+// Create user
+https://itb-nine.vercel.app/api/v1/user/create-user [POST]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```Json
+{
+    "name":"Abdur Rahim",
+    "email": "abdur@rahim.com",
+    "password": "12345678"
+}
+```
 
-### `npm run build`
+<!-- User single routes -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://itb-nine.vercel.app/api/v1/user/64c11bc8ef8c5754331dd2a6 [DELETE]
+https://itb-nine.vercel.app/api/v1/user/64c11bc8ef8c5754331dd2a6 [PATCH]
+https://itb-nine.vercel.app/api/v1/user/64c11bc8ef8c5754331dd2a6 [GET]
+https://itb-nine.vercel.app/api/v1/user/ [GET]
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+// User login
+https://itb-nine.vercel.app/api/v1/auth/login [POST]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```Json
+{
+    "email": "abdur@rahim.com",
+    "password": "12345678"
+}
+```
 
-### `npm run eject`
+// Create input values and search values
+https://itb-nine.vercel.app/api/v1/search/create-search [POST]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```Json
+{
+    "payload": [
+        {
+            "input_values": [2, 4, 7]
+        }
+    ],
+    "search_value": 4
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://itb-nine.vercel.app/api/v1/search/ [GET]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### All the technologies are being used only to develop the front-end.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. React.js
+2. Tailwind css
+3. Context API
+4. Use react router dom
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   - Creative design
+   - Deploy the front-end project in the netlify.
