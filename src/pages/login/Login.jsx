@@ -3,7 +3,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
-const apiUrl = "http://localhost:7000/api/v1/auth/login";
+const apiUrl = "https://itb-nine.vercel.app/api/v1/auth/login";
 
 const Login = () => {
   const [email, setEmail] = useState("");

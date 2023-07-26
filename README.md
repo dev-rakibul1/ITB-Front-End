@@ -76,3 +76,6 @@ https://itb-nine.vercel.app/api/v1/search/ [GET]
 
    - Creative design
    - Deploy the front-end project in the netlify.
+
+Netlify deploy link: [Backend project link](https://64c1281f433fff07dc92074a--thunderous-madeleine-6613c2.netlify.app/)
+Github repo link: [Source code](https://github.com/dev-rakibul1/ITB-Front-End)

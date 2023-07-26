@@ -22,7 +22,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/v1/user/create-user",
+        "https://itb-nine.vercel.app/api/v1/user/create-user",
         registerUserData,
         {
           headers: {

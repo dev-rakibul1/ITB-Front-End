@@ -10,11 +10,14 @@ const ContextProvider = ({ children }) => {
 
   const myFunc = async () => {
     try {
-      const response = await axios.get("http://localhost:7000/api/v1/user/", {
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-        },
-      });
+      const response = await axios.get(
+        "https://itb-nine.vercel.app/api/v1/user/",
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+          },
+        }
+      );
 
       // const accessToken = response.data.data.accessToken;
       console.log("context data: ", response);
